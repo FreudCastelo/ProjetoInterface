@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Power BI</title>
+    <link rel="stylesheet" href="../style.css">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="./Imagens/PBI.png">
+</head>
+<body id="formulario">
+    <!--Âncora-->
+    <h2 id="Secao1"></h2>
+
+    <h1>Formulário - Power BI</h1>
+    
+    <!--Acesso às páginas-->
+    <nav>
+        <a href="../index.html">Home</a> |
+        <a href="./Pagina01.html">Sobre a Ferramenta</a> |
+        <a href="./Pagina02.html">Tabelas</a> |
+        <a href="./Pagina03.html">Vídeos e Áudio</a> |
+        <a href="./Pagina04.html">Formulário</a>
+    </nav>
+
+    <br><br>
+    <!--Formulário-->
+    <form class="form" action="" method="post">
+        <p class="Pergunta">Nome: <input type="text" name="Nome" placeholder="Digite seu nome completo" size="60" required></p>
+
+        <p class="Pergunta">Telefone: <input type="tel" name="Telefone" placeholder="+55 00 00000-0000" maxlength="15" required></p>
+
+        <p class="Pergunta">Data de Nascimento: <input type="date" name="Nascimento" required></p>
+
+        <p class="Pergunta">Senha: <input type="password" name="Senha" placeholder="Máx. 8 caracteres" maxlength="8" required></p>
+
+        <p class="Pergunta">Email: <input type="email" name="Email" required></p>
+
+        <p class="Pergunta">Idade: <input type="number" name="Idade" min="12" max="100"></p>
+
+        <p class="Pergunta">Área de Atuação:</p>
+        <p>
+            <input type="radio" name="Atuacao" value="TI" required> TI
+            <input type="radio" name="Atuacao" value="Financeiro"> Financeiro
+            <input type="radio" name="Atuacao" value="Marketing"> Marketing
+            <input type="radio" name="Atuacao" value="RH"> RH
+            <input type="radio" name="Atuacao" value="Vendas"> Vendas
+            <input type="radio" name="Atuacao" value="Compras"> Compras
+        </p>
+
+        <p class="Pergunta">Já utilizou o Power BI?</p>
+        <p>
+            <input type="radio" name="Experiencia" value="Sim" required> Sim
+            <input type="radio" name="Experiencia" value="Não"> Não
+        </p>
+
+        <p class="Pergunta">Quais funcionalidades você utiliza no Power BI? (obrigatório selecionar pelo menos uma)</p>
+        <p>
+            <input type="checkbox" name="Funcionalidades" value="Dashboards" required> Dashboards
+            <input type="checkbox" name="Funcionalidades" value="Relatórios"> Relatórios
+            <input type="checkbox" name="Funcionalidades" value="DAX"> DAX
+            <input type="checkbox" name="Funcionalidades" value="ETL"> Transformações ETL
+        </p>
+
+        <p class="Pergunta">Estado onde reside:</p>
+        <p>
+            <select name="Estado" required>
+                <option value="">Selecione...</option>
+                <option value="GO">Goiás</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="BA">Bahia</option>
+                <option value="SP">São Paulo</option>
+                <option value="PA">Pará</option>
+            </select>
+        </p>
+
+        <p class="Pergunta">Grau de conhecimento em Power BI:</p>    
+        <p>
+            <select name="Conhecimento" required>
+                <option value="">Selecione...</option>
+                <option value="Básico">Básico</option>
+                <option value="Intermediário">Intermediário</option>
+                <option value="Avançado">Avançado</option>
+            </select>
+        </p>
+
+        <p class="Pergunta">Qual sua ferramenta favorita para análise de dados?</p>
+        <p>
+            <input type="radio" name="Ferramenta" value="Power BI" required> Power BI
+            <input type="radio" name="Ferramenta" value="Tableau"> Tableau
+            <input type="radio" name="Ferramenta" value="Excel"> Excel
+            <input type="radio" name="Ferramenta" value="Outros"> Outros
+        </p>
+
+        <p class="Pergunta">Você gostaria de receber materiais sobre Power BI?</p>
+        <p>
+            <input type="checkbox" name="Noticias" value="Sim"> Sim
+        </p>
+
+        <p class="Pergunta">Você trabalha atualmente com banco de dados?</p>
+        <p>
+            <input type="radio" name="BancoDados" value="Sim" required> Sim
+            <input type="radio" name="BancoDados" value="Não"> Não
+        </p>
+
+        <p class="Pergunta">Comentários:</p>
+        <textarea rows="5" cols="60" placeholder="Escreva sua opinião, dúvida ou sugestão..."></textarea>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-info">
+            <p>© 2025 – Projeto de Análise de Dados com Power BI</p>
+        </div>
+    
+        <div class="footer-icons">
+            <a href="https://powerbi.microsoft.com/pt-br/" target="_blank" title="Power BI">
+                <img src="../Icones/PBI.png" alt="Power BI">
+            </a>
+            <a href="https://www.facebook.com/" title="Facebook">
+                <img src="../Icones/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/power.bi/" title="Instagram">
+                <img src="../Icones/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/company/microsoft/" target="_blank" title="LinkedIn">
+                <img src="../Icones/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://mail.google.com/mail/" title="E-mail">
+                <img src="../Icones/gmail.png" alt="Email">
+            </a>
+        </div>
+    </footer>
+    
+    <br><br><br>
+
+    <hr>
+    <!-- Âncora para voltar ao topo -->
+    <a href="#Secao1">Acesse o topo da página</a>
+
+</body>
+</html>
